@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Cemetery Map</title>
     <style>
-      rect,
+      rect:not(.fundo),
       path {
-        fill: #d9d9d9;
+        fill: #ffffff;
         stroke: black;
         stroke-width: 0.5;
         cursor: pointer;
         transition: fill 0.3s;
       }
 
-      rect:hover,
+      rect:not(.fundo):hover,
       path:hover {
         fill: #a8a8a8;
+      }
+
+      .fundo {
+        fill: none;
+        pointer-events: none;
       }
 
       text {
@@ -36,7 +41,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="2283" height="1048" fill="white" />
+      <rect class="fundo" width="2283" height="1048" fill="none" />
       <path
         id="L01Q01J01"
         d="M209 750.124L370 730L356.5 649L551 617L568.5 697.5L821.5 661L853.875 869.67L242.774 965.5L209 750.124Z"
@@ -244,8 +249,7 @@
     </svg>
 
     <script>
-      // Seleciona todos os túmulos (retângulos e paths)
-      document.querySelectorAll("rect, path").forEach((element) => {
+      document.querySelectorAll("rect:not(.fundo), path").forEach((element) => {
         element.addEventListener("click", () => {
           alert(`Você clicou no túmulo: ${element.id}`);
         });
