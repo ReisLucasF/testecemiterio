@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Cemetery Map</title>
+    <style>
+      rect,
+      path {
+        fill: #d9d9d9;
+        stroke: black;
+        stroke-width: 0.5;
+        cursor: pointer;
+        transition: fill 0.3s;
+      }
+
+      rect:hover,
+      path:hover {
+        fill: #a8a8a8;
+      }
+
+      text {
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mapa Interativo de Túmulos</h1>
+
+    <svg
+      width="800"
+      height="600"
+      viewBox="0 0 2283 1048"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="2283" height="1048" fill="white" />
+      <path
+        id="L01Q01J01"
+        d="M209 750.124L370 730L356.5 649L551 617L568.5 697.5L821.5 661L853.875 869.67L242.774 965.5L209 750.124Z"
+        fill="#D9D9D9"
+      />
+      <rect
+        id="L01Q01J02"
+        x="832.395"
+        y="896.208"
+        width="241.505"
+        height="102"
+        transform="rotate(-2.4851 832.395 896.208)"
+        fill="#D9D9D9"
+      />
+      <rect
+        id="L01Q01J03"
+        x="1062.96"
+        y="655.554"
+        width="74.0321"
+        height="232"
+        transform="rotate(-2.36401 1062.96 655.554)"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L01Q02J01"
+        d="M849.5 685L1055.71 672L1063.2 813.802L930.5 813.802L927.5 769.5L840.5 772.5L837 719L851.5 717L849.5 685Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L01Q02J02"
+        d="M1193 711H1377V975.5L1226 978V919H1193V711Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L01Q03J01"
+        d="M135 215L293 200.5L302 302L255 307.5L260 382L152.5 396.5L135 215Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L01Q03J02"
+        d="M321 120H474.5L478 304L326 311.5L321 120Z"
+        fill="#D9D9D9"
+      />
+      <rect
+        id="L01Q03J03"
+        x="484"
+        y="120"
+        width="128"
+        height="200"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L02Q01J01"
+        d="M620 190L746 180L759 362L633.5 370.5L620 190Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L02Q01J02"
+        d="M745.5 99L795.5 96.5L799 144.5L887 142L902 362.5L782 370L769 183.5H751.5L745.5 99Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L02Q01J03"
+        d="M930 106L1057 103.5L1069 459L941 461.5L930 106Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L02Q02J01"
+        d="M1058 96L1201 86L1205.5 193L1158 196.5L1162 234.5L1201 232L1214 417L1080 423.5L1058 96Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L02Q02J02"
+        d="M154 405L320.5 378L347 563L177.5 585L154 405Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L02Q02J03"
+        d="M347 358L471.5 349.5L488.5 550.5L361.5 559.5L347 358Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L03Q01J01"
+        d="M549.5 352.5L607.5 349L625.5 575.5L554.5 581.5L549.5 538H526.5V514.5L489.5 518.5L483.5 430H507V410H530.5V376.5L549.5 373V352.5Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L03Q01J02"
+        d="M639 378L755.5 374L759 536H639V378Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L03Q01J03"
+        d="M761.5 374L909.5 365L918 553L766 562.5L761.5 374Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L03Q02J01"
+        d="M917.5 467.5L1063 464L1066 549L923.5 558.5L917.5 467.5Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L03Q02J02"
+        d="M1080 536L1219.5 519L1229 607L1092 624.5L1080 536Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L03Q02J03"
+        d="M1242 381L1364.5 375.5L1371 497L1248 502.5L1242 381Z"
+        fill="#D9D9D9"
+      />
+      <rect
+        id="L03Q03J01"
+        x="1289"
+        y="103"
+        width="54"
+        height="102"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L04Q01J01"
+        d="M1361 64H1502V183.5H1476V247H1361V64Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L04Q01J02"
+        d="M1506 94H1634L1644 320L1509 322L1506 94Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L04Q01J03"
+        d="M1639 78L1756 74L1769 304H1749V336H1783L1791.5 506L1662 511.5L1659 434.5L1690 433L1683.5 309.5L1649.5 314L1639 78Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L04Q02J01"
+        d="M1792 103L1946 97.5L1963 295L1939.5 327L1837 336V417L1859.5 423L1810 487L1792 103Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L04Q02J02"
+        d="M1979 282L2023.5 289.5L2004 393.5L1942.5 504L1810 492.5L1979 282Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L04Q02J03"
+        d="M2028 291L2162 311L2143 452L2162 457.5L2152.5 533.5L2143 593L2001 572.5L2009 515L1992 512L2028 291Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q01J01"
+        d="M1971.5 104L2186.5 135.5L2166 306L2046 289.5L2054 233.5L1964.5 222L1971.5 104Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q01J02"
+        d="M1974.5 45.5L2070.5 42V114.5L1971 102L1974.5 45.5Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q01J03"
+        d="M2074 35H2198L2200.5 117H2076L2074 35Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q02J01"
+        d="M1229 533L1367 522.5L1371 707H1293L1283 602.5L1236.5 596.5L1229 533Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q02J02"
+        d="M1381 657H1457.5V641.5H1522L1532.5 952.5L1384.5 955.5L1381 657Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q02J03"
+        d="M1371 393L1526 384.5L1531 504L1374.5 517L1371 393Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q03J01"
+        d="M1511 516.5L1641 512.5L1647 665H1674L1678.5 950H1571.5V831H1610.75V662.5L1574.5 660V611.5H1523L1511 516.5Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q03J02"
+        d="M1680 667L1723.5 663V522H1827L1831 667V946L1683 950L1680 667Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L05Q03J03"
+        d="M1838 701L2070 697.5V790.5H1992V950H1838V701Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L06Q01J01"
+        d="M1831 552H1954V653.5H2086.5V628H2132L2135 694H1954H1836L1831 552Z"
+        fill="#D9D9D9"
+      />
+      <path
+        id="L06Q01J02"
+        d="M2003 824L2127 828V950L1999.5 946.5L2003 824Z"
+        fill="#D9D9D9"
+      />
+    </svg>
+
+    <script>
+      // Seleciona todos os túmulos (retângulos e paths)
+      document.querySelectorAll("rect, path").forEach((element) => {
+        element.addEventListener("click", () => {
+          alert(`Você clicou no túmulo: ${element.id}`);
+        });
+      });
+    </script>
+  </body>
+</html>
